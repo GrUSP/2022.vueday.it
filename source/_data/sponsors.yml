@@ -16,32 +16,32 @@ sponsors_block_title: "Thanks to our sponsors"
 #     site_url: ""
 gold:
   sponsor1:
-    name: "workwave"
-    logo_filename: "workwave.svg"
+    name: "StoryBlok"
+    logo_filename: storyblok.svg
+    site_url: "https://www.storyblok.com/"
+  sponsor2:
+    name: "WorkWave"
+    logo_filename: workwave.svg
     site_url: "https://www.workwave.com/"
 silver:
-  sponsor0:
+  sponsor1:
+    name: "CentralReach"
+    logo_filename: centralreach.svg
+    site_url: "https://centralreach.com/"
+  sponsor2:
     name: "Daruma"
-    logo_filename: "daruma.svg"
+    logo_filename: daruma.svg
     site_url: "http://www.darumahq.com/"
-  sponsor4:
-    name: "Madisoft"
-    logo_filename: "madisoft.svg"
-    site_url: "https://labs.madisoft.it"
-  sponsor6:
-    name: "SiteGround"
-    logo_filename: "siteground.png"
-    site_url: "https://www.siteground.com/"
 bronze:
   sponsor2:
     name: "stickermule"
-    logo_filename: "stickermule.svg"
+    logo_filename: stickermule.svg
     site_url: "https://mule.to/p2gc"
-# diversity:
-#   sponsor1:
-#     name: "S"
-#     logo_filename: ""
-#     site_url: ""
+diversity:
+  sponsor1:
+    name: "StoryBlok"
+    logo_filename: storyblok.svg
+    site_url: "https://www.storyblok.com/"
 
 # Partner configuration
 partner_tags:

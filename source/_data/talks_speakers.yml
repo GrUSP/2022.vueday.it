@@ -77,6 +77,6 @@ days:
         end_datetime: 2022-05-19T11:05+02:00
         talk_title: ""
         talk_description: ""
-        talk_video_url:
+        talk_video_url: 
         speakers:
           speaker_1: *speaker

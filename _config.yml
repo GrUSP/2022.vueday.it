@@ -11,11 +11,11 @@ theme: "grusp_conf"
 # Site / OG
 type: website
 slug: vueday
-edition: 2021
+edition: 2022
 title: "vueday 2021"
-description: "vueday 2021, online conference"
+description: "vueday 2022, the italian Vue conference"
 #   separate keywords by comma, no spaces
-keywords: conference,software conference,symfony,php,tech conference
+keywords: conference,software conference,vue,javascript,tech conference,web developement
 author: GrUSP
 language: en
 timezone: 'Europe/Rome'
@@ -36,7 +36,7 @@ breadcrumb:
 # URL
 ## If your site is put in a subdirectory, set url as 'yoursite.com/child' and root as '/child/'
 # TODO actual URL (per site)
-url: https://2021.vueday.it/
+url: https://2022.vueday.it/
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:

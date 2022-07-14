@@ -12,11 +12,11 @@ more:
   content_1:
     "vueday is the main conference in Italy that is dedicated solely to Vue and its ecosystem.
     <br><br  />
-    This is the 3rd edition of the conference, and due to the pandemic situation it will take place online"
+    This is the 4th edition of the conference."
   content_2:
 past_edition:
   title: "Browse past editions of vueday"
-  video_url: "https://www.youtube.com/embed/videoseries?list=PLWK9j6ps_unnhFRv8uda3vYzj1BnaJB5O"
+  video_url: "https://vimeo.com/showcase/8416003/embed"
   video_caption: "Watch the videos from the past editions"
 team:
   title: "Our team"
@@ -35,18 +35,22 @@ team:
       role: "Sponsors Manager"
       pic_filename: "giovanna.jpg"
     member_4:
+      name: "Alessandro 'Cirpo' Cinelli"
+      role: "Technical Committee"
+      pic_filename: "cirpo.jpeg"
+    member_5:
       name: "Matteo Beccati"
       role: "GrUSP Board Member"
       pic_filename: "matteo.jpg"
-    member_5:
+    member_6:
       name: "Cesare D'Amico"
       role: "GrUSP Board Member"
       pic_filename: "cesare.jpg"
-    member_6:
+    member_7:
       name: "Daniel Londero"
       role: "GrUSP Board Member"
       pic_filename: "daniel.jpg"
-    member_7:
+    member_8:
       name: "Francesco Fullone"
       role: "Troublemaker"
       pic_filename: "fullo.jpg"
