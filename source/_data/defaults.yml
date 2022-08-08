@@ -60,7 +60,8 @@ conference:
   geninfo_description: "vueday 2022 is the 4th edition of the Vue conference, from the GrUSP Team - organizer of events like <a href='https://www.jsday.it/'>jsday</a>.
   <br> <br /> The event is international and all sessions will be in English.
   <br> <br /> Vue is a progressive framework for building user interfaces. Vue is designed from the ground up to be incrementally adoptable. The core library is focused on the view layer only, and is easy to pick up and integrate with other libraries or existing projects.
-  <br> <br /> vueday 2022 is happening <b>in Verona and online</b> on Friday 18th November 2022."
+  <br> <br /> vueday 2022 is happening <b>in Verona and online on Friday 18th November 2022.</b> The day before we'll host some workshops, to be announced soon (tickets will be sold separately).
+  <p>On Thursday 17th, in the same venue, we'll also host <a href='https://laravelday.it'>laravelday</a>, a conference dedicated to Laravel, in Italian language. You can have a discounted ticket if you want to attend both events."
   geninfo_about_label: "About"
   geninfo_coc_label: "Code of conduct"
   geninfo_scholarships_label: "Scholarships"
