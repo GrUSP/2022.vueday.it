@@ -4,103 +4,47 @@ summary_page_button_label: "See all workshops"
 # image credits (l'esempio è per la hero del CSS Day!)
 # workshop_img_credits: "Image by Gianni Careddu - Own work, <a href='https://commons.wikimedia.org/w/index.php?curid=74821344ì target='_blank' rel='noopener noreferrer'>CC BY-SA 4.0</a>"
 
+
 workshops:
-  workshop_1:
-    ws_id: workshop_1
+
+  jamstack-nuxt:
+    ws_id: jamstack-nuxt
     is_external: false
-    page_uri: "workshop/workshop_1.html"
-    page_title: "Workshop #1"
-    workshop_title: "Lorem Ipsum"
-    ticket_url: ""
-    ticket_label: "Register now"
-    location_title: "Dove"
-    # location: "Verona"
-    online_location: "online"
-    # location_name: "Hotel San Marco"
-    location_name: "The Internet"
-    location_contact_phone: "+045569011"
-    location_contact_email: "sanmarco@sanmarco.vr.it"
-    location_contact_url: "https://www.sanmarco.vr.it/"
-    location_address: "Via Longhena 42, 37138 Verona (VE) Italy"
-    location_maps_url: "https://www.google.com/maps/place/Hotel+San+Marco+Fitness+Pool+%26+SPA/@45.4399961,10.9697441,17z/data=!3m1!4b1!4m8!3m7!1s0x4781e1e30a8be6af:0x8091b108e1d130c6!5m2!4m1!1i2!8m2!3d45.4399961!4d10.9719328"
-    location_maps_label: "Get directions"
-    # location_additional_info: "L'hotel offre tariffe scontate ai partecipanti ai workshop, sia per camere singole sia per camere doppie."
-    location_additional_info: "Tutto in streaming... riceverete informazioni dettagliate insieme alla conferma dell'iscrizione"
-    whatandwhen_title: "Cosa e quando"
-    # whatandwhen_additional_info: "Registrazione, caffè e pranzo inclusi"
-    whatandwhen_additional_info: "(informazioni aggiuntive se servono; cancellare valore se non servono)"
-    date: 2020-09-15T09:30
-    end_date: 2020-09-15T16:30
-    date_text:
-    language_title: "Lingua"
-    language: "italian / italiano"
-    language_ext: "Language: Italian / Lingua: italiano"
-    language_additional_info: "No translation provided."
-    collab: "Workshop realizzato in collaborazione con <a href='https://example.com/' target='_blank' rel='external noopener nofererrer'>Example.com</a>"
-    description: "Lorem ipsum dolor sic amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
-    description_long: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-    # video trailer?
-    trailer: true
-    trailer_url: "https://player.vimeo.com/video/352012164"
-    # nota sul titolo: se il linguaggio specificato in `language` NON in clude 'italian', in pagina viene aggiunta la "s" finale
-    teacher_title: "Teacher"
-    teachers:
-      teacher_1:
-        teacher_name: "Teacher Uno"
-        teacher_bio: "This is the bio. Lorem ipsum dolor sic amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. And so on."
-        pic_filename: "pic1.jpg"
-        teacher_role: "full stack developer"
-        teacher_org: "ExampleCom"
-      teacher_2:
-        teacher_name: "Another Teacher"
-        teacher_bio: "This is the other speaker's bio. Lorem ipsum dolor sic amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. And so on."
-        pic_filename: "pic2.jpg"
-        teacher_role: "full stack developer"
-        teacher_org: "AnotherAgency"
-    topics_title: "Argomenti"
-    topics:
-      - "Topic 1"
-      - "Topic 2"
-      - "Topic 3"
-      - "Topic 4"
-      - "Topic 5"
-      - "Topic 6"
-    addressees_title: "A chi è rivolto"
-    addressees_description: "Il workshop è rivolto a chi sa leggere il Lorem ipsum dolor sic amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    requirements_title: "Requisiti di partecipazione"
-    requirements_description: "Sapere accendere un computer è un requisito fondamentale, ma diciamo che anche sapere un minimo di Ruby aiuta."
-    useful_info_title: "Informazioni utili"
-    useful_info_description: "Anche *avere* un computer aiuta! E se possibile dovreste avere installato rbenv, Bundler, node.js e yarn. Inoltre se avete un buon editor vi conviene: non dico VSCode, ma probabilmente Kate non è proprio l'ideale."
-    # CTA
-    cta_title: "Hurry up. There are only a few available places!"
-  workshop_2:
-    ws_id: workshop_2
-    is_external: false
-    page_uri: "workshop/workshop_2.html"
-    page_title: "Sample second workshop"
-    workshop_title: "Workshop on multiple workshops"
+    page_uri: "workshop/jamstack-nuxt.html"
+    page_title: "Create a Jamstack site using Nuxt 3 & Storyblok"
+    workshop_title: "Workshop: Create a Jamstack site using Nuxt 3 & Storyblok"
+    ticket_url: "https://vueday-2022.eventbrite.com"
+    ticket_label: "Participate"
+    location_title: "Where"
     location: "Verona"
-    location_name: "Hotel San Marco"
-    location_contact_phone: "+045569011"
-    location_contact_email: "sanmarco@sanmarco.vr.it"
+    # online_location: "online"
+    location_name: "Hotel San Marco, Verona"
+    # location_name: "The Internet"
+    #location_contact_phone: "+045569011"
+    #location_contact_email: "sanmarco@sanmarco.vr.it"
     location_contact_url: "https://www.sanmarco.vr.it/"
-    location_address: "Via Longhena 42, 37138 Verona (VE) Italy"
+    location_address: "Via Longhena 42, 37138 Verona (VR) Italy"
     location_maps_url: "https://www.google.com/maps/place/Hotel+San+Marco+Fitness+Pool+%26+SPA/@45.4399961,10.9697441,17z/data=!3m1!4b1!4m8!3m7!1s0x4781e1e30a8be6af:0x8091b108e1d130c6!5m2!4m1!1i2!8m2!3d45.4399961!4d10.9719328"
     location_maps_label: "Get directions"
-    location_additional_info: "L'hotel offre tariffe scontate ai partecipanti ai workshop, sia per camere singole sia per camere doppie."
-    whatandwhen_title: "Cosa e quando"
-    whatandwhen_additional_info: "Registrazione, caffè e pranzo inclusi"
-    date: 2020-09-15T09:30
-    end_date: 2020-09-16T16:30
-    date_text: Sept 15-16th, 2021
-    language_title: "Lingua"
-    language: "italian / italiano"
-    language_ext: "Language: Italian / Lingua: italiano"
-    language_additional_info: "No translation provided."
-    # no collab / commented out
-    # collab:
-    description: "Testo qualsiasi per descrizione breve"
-    description_long: "Testo della descrizione lunga, Testo della descrizione lunga, Testo della descrizione lunga, Testo della descrizione lunga, Testo della descrizione lunga, Testo della descrizione lunga."
+    location_additional_info: "The hotel offers discounts for participants, contact them for more details."
+    whatandwhen_title: "How and when"
+    # whatandwhen_additional_info: "Registrazione, caffè e pranzo inclusi"
+    whatandwhen_additional_info: "The workshop takes place in person, on Thursday 17th November 2022, from 10 to 17."
+    date: 2022-11-17T09:30+01:00
+    end_date: 2020-11-17T16:30+01:00
+    date_text: "Thursday 17th November 2022, 10-17"
+    language_title: "Language"
+    language: "English"
+    language_ext: "🇬🇧 This workshop is held in English language"
+    language_additional_info: ""
+    collab: "The workshop is organized in collaboration with <a href='https://www.storyblok.com/'>Storyblok</a>"
+    description: "Build a full-blown multilingual site with Nuxt 3 and Storyblok as a headless CMS"
+    description_long: "<b>Build a full-blown multilingual site with Nuxt 3 and Storyblok as a headless CMS.</b>
+     <br> <br />
+     Do you want to build a website with multiple languages, optimized images, and performant as light?
+     Then, you're in the right place. <br>We'll use Nuxt 3 newest features to create a clean website in combination with Storyblok, a headless CMS that will empower it so that even non-dev users will be able to create new pages.
+     <br> <br /><b>Atomic design, creating dynamic menus in Vue, rendering dynamic pages and Nuxt 3 deployments are just a few things you'll learn!</b>
+        <br> <br />"
     # video trailer?
     trailer: false
     trailer_url: ""
@@ -108,24 +52,94 @@ workshops:
     teacher_title: "Teacher"
     teachers:
       teacher_1:
-        teacher_name: "Sample Teacher"
-        teacher_bio: "This is the bio. Lorem ipsum dolor sic amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. And so on."
-        pic_filename: "pic1.png"
-        teacher_role: "CEO"
-        teacher_org: "ExampleCom"
-    topics_title: "Argomenti"
+        teacher_name: "Alba Silvente Fuentes"
+        teacher_bio: "Alba Silvente Fuentes, aka Dawntraoz, is a FrontEnd Developer working as a Dev Rel Engineer. She likes writing about FrontEnd & Jamstack on her personal blog, speaking at conferences, hosting a Spanish tech podcast, and working hard in the open-source community. She is also a GoogleDevExpert in Web Technologies and an ambassador at Nuxt."
+        pic_filename: "alba-silvente.png"
+        teacher_role: "Developer Relations Engineer"
+        teacher_org: "Storyblok"
+    topics_title: "Workshop Agenda:"
     topics:
-      - "Workshops on workshops"
-      - "Talk on talks"
-      - "Meta-workshop"
-    addressees_title: "A chi è rivolto"
-    addressees_description: "Il workshop è rivolto a chi vuole fare un workshop sui workshop per sapere come si fa un workshop sui workshop."
-    requirements_title: "Requisiti di partecipazione"
-    requirements_description: "Basta saper leggere e scrivere."
-    useful_info_title: "Informazioni utili"
-    useful_info_description: "Presentarsi un quarto d'ora prima dell'inizio è consigliabile perché così ti offriamo un caffè."
+      - "Create a project from scratch with Nuxt 3 and connect it to Storyblok"
+      - "Render Storyblok stories dynamically in our application"
+      - "Create dynamic menus and the layout of our website"
+      - "Create custom components and use the Image Transformation API provided by Storyblok"
+      - "Create and render blog articles"
+      - "Manage multilingual content"
+      - "Publish our Jamstack site on a static site host"
+    addressees_title: "Who is it for?"
+    addressees_description: "This workshop is for those who want to learn more about headless approaches, create a Jamstack site, use an Image Transformation API, start playing with static site generators or keep up with the latest trend in the web ecosystem."
+    requirements_title: "Prerequisities"
+    requirements_description: "The workshop is Beginner/Intermediate level. To participate, you need to have some knowledge in Vue/Nuxt."
+    useful_info_title: "Useful information"
+    useful_info_description: "The workshop is happening in Verona, in the same venue as the conference. Coffee breaks and lunch are included.
+     <br><b>To participate, choose the 'Conference + Jamstack workshop' ticket.</b>"
     # CTA
-    cta_title: "Hurry up. There are only a few available places!"
+    cta_title: "Get your ticket!"
+
+  workshop_vue-firebase:
+    ws_id: workshop_vue-firebase
+    is_external: false
+    page_uri: "workshop/workshop_vue-firebase.html"
+    page_title: "Workshop: Applicazione in real time con Vue.js e Firebase"
+    workshop_title: "Applicazione in real time con Vue.js e Firebase"
+    ticket_url: "https://vueday-2022.eventbrite.com"
+    ticket_label: "Assicurati un posto"
     location_title: "Dove"
-    ticket_url: ""
-    ticket_label: "Register now"
+    location: "Verona"
+    # online_location: "online"
+    location_name: "Hotel San Marco, Verona"
+    # location_name: "The Internet"
+    #location_contact_phone: "+045569011"
+    #location_contact_email: "sanmarco@sanmarco.vr.it"
+    location_contact_url: "https://www.sanmarco.vr.it/"
+    location_address: "Via Longhena 42, 37138 Verona (VR) Italy"
+    location_maps_url: "https://www.google.com/maps/place/Hotel+San+Marco+Fitness+Pool+%26+SPA/@45.4399961,10.9697441,17z/data=!3m1!4b1!4m8!3m7!1s0x4781e1e30a8be6af:0x8091b108e1d130c6!5m2!4m1!1i2!8m2!3d45.4399961!4d10.9719328"
+    location_maps_label: "Get directions"
+    location_additional_info: "L'hotel offre tariffe convenzionate a chi partecipa all'evento."
+    whatandwhen_title: "Come e quando"
+    # whatandwhen_additional_info: "Registrazione, caffè e pranzo inclusi"
+    whatandwhen_additional_info: "Il corso si svolge in presenza, Giovedì 17 Novembre dalle 9:30 alle 17:30."
+    date: 2022-11-17T09:30+01:00
+    end_date: 2022-11-17T17:30+01:00
+    date_text: "Giovedì 17 Novembre 2022, dalle 9:30 alle 17:30."
+    language_title: "Lingua"
+    language: "italian / italiano"
+    language_ext: "🇮🇹 This workshop is held in Italian language"
+    language_additional_info: "No translation provided."
+    collab: "Workshop realizzato in collaborazione con <a href='https://www.laramind.com/'>LaraMind</a>"
+    description: ""
+    description_long: "Hai mai provato a creare un'applicazione in real time con Vue.js e Firebase?
+    Potrai fare tutto questo alla fine di questo workshop pratico basato su una delle esigenze più specifiche oggi che coinvolge chi fa sviluppo front-end e non solo.
+    In questo workshop vedrai da vicino la potenzialità di quelle che sono le soluzioni serverless oggi più immediate, le più logiche e le più ragionevoli soprattutto quando si va a risolvere problematiche generiche dove non ha senso complicarsi la vita.
+    <br> <br />"
+    # video trailer?
+    trailer: false
+    trailer_url: ""
+    # nota sul titolo: se il linguaggio specificato in `language` NON in clude 'italian', in pagina viene aggiunta la "s" finale
+    teacher_title: "Docente"
+    teachers:
+      teacher_1:
+        teacher_name: "Alessandro Brugioni"
+        teacher_bio: "Front end developer fortemente specializzato in Vue.js con conoscenze anche lato back end, grazie all'utilizzo di Laravel e Node.js. Coordina il team docenti LaraMind per quanto riguarda i corsi a catalogo."
+        pic_filename: "alessandro-brugioni.jpeg"
+        teacher_role: "Front end Developer"
+        teacher_org: "LaraMind"
+    topics_title: "Argomenti del workshop"
+    topics:
+      - "Creazione applicazione vuejs+firebase (autenticazione e real time database)"
+      - "Creazione progetto con Vite"
+      - "Sviluppo applicazione con composition API"
+      - "Deploy su Vercel"
+      - "Testing con Cypress"
+    addressees_title: "Per chi è questo corso"
+    addressees_description: "Il corso è rivolto a developer che vogliano ottenere la consapevolezza delle potenzialità di Firebase quando viene utilizzato in concomitanza con Vue.js oltre che una visione più completa, articolata ed avanzata di uno dei framework JavaScript del momento."
+    requirements_title: "Requisiti di partecipazione"
+    requirements_description: "Per partecipare a questo workshop è necessaria la conoscenza di JavaScript, e delle basi di Vue.js."
+    useful_info_title: "Informazioni utili"
+    useful_info_description: "Il corso si svolge a Verona, nella stessa location di vueday, il giorno prima della conferenza (Giovedì 17 Novembre 2022).
+    <br>Sono inclusi nel biglietto il pranzo e le pause caffè.
+    <br><b>Il biglietto per il corso è venduto separatamente da quello per la conferenza.</b>"
+    # CTA
+    cta_title: "Partecipa al workshop"
+
+
