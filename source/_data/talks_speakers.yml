@@ -1,21 +1,99 @@
 # NB impostare a `true` per generare la pagina, a `false` per NON generarla
-generate_schedule_page: true
+generate_schedule_page: false
 schedule_under_construction_title: "Schedule under construction"
 schedule_under_construction_description: "We are still defining the schedule. Please be patient"
 
 # Speakers. I mixin "&nome" servono per indicare quali speaker partecipano a ogni talk, sotto
-speaker_1: &speaker
-  speaker_in_speaker_lists: false
-  speaker_name:
-  speaker_pic_filename: .jpg
-  speaker_role: ""
-  speaker_bio: ""
-  speaker_github_url: ""
-  speaker_twitter_url: ""
+speaker_1: &fotis
+  speaker_in_speaker_lists: true
+  speaker_name: Fotis Adamakis
+  speaker_pic_filename: fotis-adamakis.png
+  speaker_role: "Senior Software Engineer @ Glovo	"
+  speaker_bio: "Software Engineer @Glovo and proud Vue.js Athens co-organizer. Born in Greece but currently living in Barcelona. On a mission to travel the world and taste every food there is."
+  speaker_github_url: "https://github.com/fadamakis"
+  speaker_twitter_url: "https://twitter.com/fadamakis"
   is_mc: false
+speaker_2: &denny
+  speaker_in_speaker_lists: true
+  speaker_name: Denny Biasiolli
+  speaker_pic_filename: denny-biasiolli.png
+  speaker_role: "Freelance Full Stack Developer @ Fingerprint"
+  speaker_bio: "Developer for many years, I enjoy contributing to open source projects and I love long and exhausting sports, like triathlon, mountain running and software development :)"
+  speaker_github_url: "https://github.com/dennybiasiolli/"
+  speaker_twitter_url: "https://twitter.com/DennyBiasiolli"
+  is_mc: false
+# speaker_3: &geisy
+#   speaker_in_speaker_lists: true
+#   speaker_name: Geisy Domiciano
+#   speaker_pic_filename: geisy-domiciano.png
+#   speaker_role: "Senior Front end developer @ Telenor Sverige AB"
+#   speaker_bio: "She has been working as a Front end developer for almost 12 years, and yet she is passionated about learning new things and sharing with as many people as possible. She has been involved with the Swedish community by teaching web development to women, people of color and minorities on the past few years."
+#   speaker_github_url: "https://github.com/Gdomiciano"
+#   speaker_twitter_url: "https://twitter.com/geisydomiciano"
+#   is_mc: false
+# speaker_4: &filip
+#   speaker_in_speaker_lists: true
+#   speaker_name: Filip Rakowski
+#   speaker_pic_filename: filip-rakowski.png
+#   speaker_role: "Co-founder & CTO @ Vue Storefront"
+#   speaker_bio: "Co-founder & CTO of Vue Storefront - biggest Open Source eCommerce frontend project, co-organizer of Wrocław Vue.js meetups, web perf geek since 2017, proud cat owner."
+#   speaker_twitter_url: "https://twitter.com/filrakowski"
+#   is_mc: false
+speaker_5: &maya
+  speaker_in_speaker_lists: true
+  speaker_name: Maya Shavin
+  speaker_pic_filename: maya-shavin.png
+  speaker_role: "Senior Software Engineer @ Microsoft"
+  speaker_bio: "Maya is Senior Software Engineer in Microsoft, working extensively with JavaScript and frontend frameworks and based in Israel. She founded and is currently the organizer of the VueJS Israel Meetup Community, helping to create a strong playground for Vue.js lovers and like-minded developers. Maya is also a published author, international speaker and an open-source library maintainer of frontend and web projects. She can be reached at her <a href='https://mayashavin.com'>blog</a>, on Twitter @mayashavin, or via email."
+  speaker_github_url: "https://github.com/mayashavin"
+  speaker_twitter_url: "https://twitter.com/MayaShavin"
+  is_mc: false
+speaker_6: &alba
+  speaker_in_speaker_lists: true
+  speaker_name: Alba Silvente Fuentes
+  speaker_pic_filename: alba-silvente.png
+  speaker_role: "Developer Relations Engineer @ Storyblok"
+  speaker_bio: "Alba Silvente Fuentes, aka Dawntraoz, is a FrontEnd Developer working as a Dev Rel Engineer. She likes writing about FrontEnd & Jamstack on her personal blog, speaking at conferences, hosting a Spanish tech podcast, and working hard in the open-source community. She is also a GoogleDevExpert in Web Technologies and an ambassador at Nuxt."
+  speaker_github_url: "https://github.com/Dawntraoz"
+  speaker_twitter_url: "https://twitter.com/dawntraoz"
+  is_mc: false
+speaker_7: &anna
+  speaker_in_speaker_lists: true
+  speaker_name: Anna Vovchenko
+  speaker_pic_filename: anna-vovchenko.png
+  speaker_role: "Senior Frontend Engineer @ GitLab"
+  speaker_bio: "Anna Vovchenko is a passionate frontend developer who is always eager to know the product in depth. Anna strives to make web development consistent and efficient. She is driven by new challenges and likes to learn constantly."
+  speaker_github_url: "https://github.com/anniealig"
+  is_mc: false
+speaker_8: &sybren
+  speaker_in_speaker_lists: true
+  speaker_name: Sybren Willemot
+  speaker_pic_filename: sybren-willemot.png
+  speaker_role: "Front-end developer @ Euricom, Core member of Chakra UI Vue"
+  speaker_bio: "Sybren is a front-end developer for a few years and works at Euricom in Belgium. He is part of the awesome Chakra UI Vue core team, a component library focused on making accessible Vue.js websites and applications fast.
+  He really enjoys organizing meetups for BEL Vue in Belgium and World Vue worldwide. In his spare time, he likes to travel with his wife, visit amazing places and meet great people."
+  speaker_github_url: "https://github.com/carwack"
+  speaker_twitter_url: "https://twitter.com/carwack"
+  is_mc: false
+# speaker_9: &nico
+#   speaker_in_speaker_lists: true
+#   speaker_name: Nicolò Mezzopera
+#   speaker_pic_filename: nicolo-mezzopera.png
+#   speaker_role: ""
+#   speaker_bio: ""
+#   is_mc: true
+
 
 speakers:
-  speaker_1: *speaker
+  speaker_1: *fotis
+  speaker_2: *denny
+  # speaker_3: *geisy
+  # speaker_4: *filip
+  speaker_5: *maya
+  speaker_6: *alba
+  speaker_7: *anna
+  speaker_8: *sybren
+  # speaker_9: *nico
 
 tracks:
   track_1: &track_1
@@ -60,23 +138,101 @@ days:
         service_icon: "glass"
 
       # talk
-      keynote:
-        item_type: "keynote"
-        track: *track_1
-        start_datetime: 2022-05-19T09:30+02:00
-        end_datetime: 2022-05-19T10:25+02:00
-        talk_title: ""
-        talk_description: ""
-        talk_video_url:
-        speakers:
-          speaker_1: *speaker
-      titolotalk1:
+      large-scale-nuxt:
         item_type: "talk"
         track: *track_1
-        start_datetime: 2022-05-19T10:25+02:00
-        end_datetime: 2022-05-19T11:05+02:00
-        talk_title: ""
-        talk_description: ""
-        talk_video_url: 
+        # start_datetime: 2022-05-19T09:30+02:00
+        # end_datetime: 2022-05-19T10:25+02:00
+        talk_title: "Large Scale Nuxt Architecture"
+        talk_description: "Writing scalable and easy-to-maintain software is hard. Nuxt architecture follows best practices and provides many utilities to help and protect us from common pitfalls. In this session we will explore how big nuxt codebases differ from smaller ones, discuss unique problems you should expect and how to solve them. This will enable you to improve the architecture of your application and build better and cleaner software that everyone will enjoy working with."
+        # talk_video_url:
         speakers:
-          speaker_1: *speaker
+          speaker_1: *fotis
+      migrate-vue3:
+        item_type: "talk"
+        track: *track_1
+        # start_datetime: 2022-05-19T10:25+02:00
+        # end_datetime: 2022-05-19T11:05+02:00
+        talk_title: "Is it time to migrate to Vue 3?"
+        talk_description: "Are you eager to migrate your entire codebase to Vue 3 and composition API? Before starting the long journey away from Vue 2.6 you should consider a few intermediate steps:
+        <ul>
+        <li>- compatibility with your dependencies</li>
+        <li>- tests</li>
+        <li>- maintainability</li>
+        <li>- consider a step-by-step migration passing trough Vue 2.7</li>
+        <li>- what about the Vite/Vitest ecosystem?</li>
+        </ul>"
+        # talk_video_url:
+        speakers:
+          speaker_1: *denny
+      # a11y-vue:
+      #   item_type: "talk"
+      #   track: *track_1
+      #   # start_datetime: 2022-05-19T09:30+02:00
+      #   # end_datetime: 2022-05-19T10:25+02:00
+      #   talk_title: "A11Y with Vue - Can everyone reach your application?"
+      #   talk_description: "Most of the time while developing a Vue application developers tend to downprioritise  both Testing and Accessibility. In the past few years  developers got a bit better when it comes to testing, but still adding no focus towards Accessibility, usually because there is "too much thinking" about learning, implementing and testing it. What if there was a nice way to develop accessible Vue applications ? Would you be willing to do it? What about legislation related to Accessibility? Maybe there is a lot to learn, but it can be simpler if you know where to start with."
+      #   # talk_video_url:
+      #   speakers:
+      #     speaker_1: *geisy
+      # buld-fast-web-apps:
+      #   item_type: "talk"
+      #   track: *track_1
+      #   # start_datetime: 2022-05-19T10:25+02:00
+      #   # end_datetime: 2022-05-19T11:05+02:00
+      #   talk_title: "How to build fast web apps?"
+      #   talk_description: "In this talk, I will walk you through all the steps you have to make to build fast Single Page Applications in Vue, from the ground up.
+      #   We will start with foundations and explore the most common architectural patterns that ensure fast loading and responsiveness.
+      #   Once we’re familiar with foundations, we will learn about major factors influencing app performance and how to make sure they’re always at an acceptable level.
+      #   In the end, I will show you how to measure performance and implement regular performance checks into your developer workflow."
+      #   # talk_video_url:
+      #   speakers:
+      #     speaker_1: *filip
+      advanced-XState:
+        item_type: "talk"
+        track: *track_1
+        # start_datetime: 2022-05-19T09:30+02:00
+        # end_datetime: 2022-05-19T10:25+02:00
+        talk_title: "Visualize your State Management with XState"
+        talk_description: "Learn a new concept to start your developing process - advanced XState for complex State Management in Vue.js applications, and start building complex architecture!"
+        # talk_video_url:
+        speakers:
+          speaker_1: *maya
+      image-performance-jamstack:
+        item_type: "talk"
+        track: *track_1
+        # start_datetime: 2022-05-19T10:25+02:00
+        # end_datetime: 2022-05-19T11:05+02:00
+        talk_title: "Images blast off at the speed of Jamstack!"
+        talk_description: "All of us, at some point in our career as developers, have had a run-in with image performance. But now we have modern techniques at our disposal that will make us love images again.
+        We'll see how an Image Service CDN and other performance optimization techniques, such as responsive images, sizing attributes, lazy loading, and nice placeholders, will allow us to improve the UX and performance in a very easy way.
+        How? By creating an image gallery made with Nuxt 3 and a headless CMS, allowing us to experience the functionalities of a powerful integrated Image Transformation API and Editor, and creating an image Vue component that can be used in any situation."
+        # talk_video_url:
+        speakers:
+          speaker_1: *alba
+      reusable-components:
+        item_type: "talk"
+        track: *track_1
+        # start_datetime: 2022-05-19T09:30+02:00
+        # end_datetime: 2022-05-19T10:25+02:00
+        talk_title: "Reusable components: maintain clean code efficiently"
+        talk_description: "Reusable components perform a great job helping to speed up the development process, increase maintainability and improve code quality.
+        Creating a reusable component that will solve these problems can be tricky. What is the right balance between specific and generic? When the component is abstract and composable enough? How to ensure consistency and follow design guidelines?
+        In this talk, we’ll cover the anatomy and principles of reusable components, we’ll see them sparkling in a giant codebase, and evaluate their benefits. I’ll share how we keep our 1500 buttons consistent and maintainable across the giant codebase."
+        # talk_video_url:
+        speakers:
+          speaker_1: *anna
+      web3:
+        item_type: "talk"
+        track: *track_1
+        # start_datetime: 2022-05-19T10:25+02:00
+        # end_datetime: 2022-05-19T11:05+02:00
+        talk_title: "The !magic show: Taking a Vue at Web 3."
+        talk_description: "Let’s be amazed at how easy we can implement some Web 3 functionality with Vue 3. Don’t think Crypto token chilling, NFT’s,… but think of authentication magic.
+        In this show, I will create a dApp in which the user can authenticate to a certain blockchain. Surprisingly, this can be completely anonymous. Some magic props and tools will be used like Vue 3, a Metamask wallet, and more.
+        Since I'm not a real magician, I will explain how these tricks work so you can become a Web 3 magician yourself."
+        # talk_video_url:
+        speakers:
+          speaker_1: *sybren
+
+
