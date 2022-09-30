@@ -22,21 +22,21 @@ speaker_2: &denny
   speaker_github_url: "https://github.com/dennybiasiolli/"
   speaker_twitter_url: "https://twitter.com/DennyBiasiolli"
   is_mc: false
-# speaker_3: &geisy
-#   speaker_in_speaker_lists: true
-#   speaker_name: Geisy Domiciano
-#   speaker_pic_filename: geisy-domiciano.png
-#   speaker_role: "Senior Front end developer @ Telenor Sverige AB"
-#   speaker_bio: "She has been working as a Front end developer for almost 12 years, and yet she is passionated about learning new things and sharing with as many people as possible. She has been involved with the Swedish community by teaching web development to women, people of color and minorities on the past few years."
-#   speaker_github_url: "https://github.com/Gdomiciano"
-#   speaker_twitter_url: "https://twitter.com/geisydomiciano"
+speaker_3: &geisy
+  speaker_in_speaker_lists: true
+  speaker_name: Geisy Domiciano
+  speaker_pic_filename: geisy-domiciano.png
+  speaker_role: "Senior Front end developer @ Telenor Sverige AB"
+  speaker_bio: "She has been working as a Front end developer for almost 12 years, and yet she is passionated about learning new things and sharing with as many people as possible. She has been involved with the Swedish community by teaching web development to women, people of color and minorities on the past few years."
+  speaker_github_url: "https://github.com/Gdomiciano"
+  speaker_twitter_url: "https://twitter.com/geisydomiciano"
 #   is_mc: false
-# speaker_4: &filip
+# speaker_4: &
 #   speaker_in_speaker_lists: true
-#   speaker_name: Filip Rakowski
-#   speaker_pic_filename: filip-rakowski.png
-#   speaker_role: "Co-founder & CTO @ Vue Storefront"
-#   speaker_bio: "Co-founder & CTO of Vue Storefront - biggest Open Source eCommerce frontend project, co-organizer of Wrocław Vue.js meetups, web perf geek since 2017, proud cat owner."
+#   speaker_name:
+#   speaker_pic_filename: .png
+#   speaker_role: "t"
+#   speaker_bio: ""
 #   speaker_twitter_url: "https://twitter.com/filrakowski"
 #   is_mc: false
 speaker_5: &maya
@@ -75,25 +75,25 @@ speaker_8: &sybren
   speaker_github_url: "https://github.com/carwack"
   speaker_twitter_url: "https://twitter.com/carwack"
   is_mc: false
-# speaker_9: &nico
-#   speaker_in_speaker_lists: true
-#   speaker_name: Nicolò Mezzopera
-#   speaker_pic_filename: nicolo-mezzopera.png
-#   speaker_role: ""
-#   speaker_bio: ""
-#   is_mc: true
+speaker_9: &nico
+  speaker_in_speaker_lists: true
+  speaker_name: Nicolò Mezzopera
+  speaker_pic_filename: nicolo-mezzopera.png
+  speaker_role: "Fullstack Engineering Manager @GitLab - MASTER OF CEREMONIES"
+  speaker_bio: ""
+  is_mc: true
 
 
 speakers:
   speaker_1: *fotis
   speaker_2: *denny
-  # speaker_3: *geisy
+  speaker_3: *geisy
   # speaker_4: *filip
   speaker_5: *maya
   speaker_6: *alba
   speaker_7: *anna
   speaker_8: *sybren
-  # speaker_9: *nico
+  speaker_9: *nico
 
 tracks:
   track_1: &track_1
@@ -165,29 +165,17 @@ days:
         # talk_video_url:
         speakers:
           speaker_1: *denny
-      # a11y-vue:
-      #   item_type: "talk"
-      #   track: *track_1
-      #   # start_datetime: 2022-05-19T09:30+02:00
-      #   # end_datetime: 2022-05-19T10:25+02:00
-      #   talk_title: "A11Y with Vue - Can everyone reach your application?"
-      #   talk_description: "Most of the time while developing a Vue application developers tend to downprioritise  both Testing and Accessibility. In the past few years  developers got a bit better when it comes to testing, but still adding no focus towards Accessibility, usually because there is "too much thinking" about learning, implementing and testing it. What if there was a nice way to develop accessible Vue applications ? Would you be willing to do it? What about legislation related to Accessibility? Maybe there is a lot to learn, but it can be simpler if you know where to start with."
-      #   # talk_video_url:
-      #   speakers:
-      #     speaker_1: *geisy
-      # buld-fast-web-apps:
-      #   item_type: "talk"
-      #   track: *track_1
-      #   # start_datetime: 2022-05-19T10:25+02:00
-      #   # end_datetime: 2022-05-19T11:05+02:00
-      #   talk_title: "How to build fast web apps?"
-      #   talk_description: "In this talk, I will walk you through all the steps you have to make to build fast Single Page Applications in Vue, from the ground up.
-      #   We will start with foundations and explore the most common architectural patterns that ensure fast loading and responsiveness.
-      #   Once we’re familiar with foundations, we will learn about major factors influencing app performance and how to make sure they’re always at an acceptable level.
-      #   In the end, I will show you how to measure performance and implement regular performance checks into your developer workflow."
-      #   # talk_video_url:
-      #   speakers:
-      #     speaker_1: *filip
+      a11y-vue:
+        item_type: "talk"
+        track: *track_1
+        # start_datetime: 2022-05-19T09:30+02:00
+        # end_datetime: 2022-05-19T10:25+02:00
+        talk_title: "A11Y with Vue - Can everyone reach your application?"
+        talk_description: "Most of the time while developing a Vue application developers tend to downprioritise  both Testing and Accessibility.
+        In the past few years developers got a bit better when it comes to testing, but still adding no focus towards Accessibility, usually because there is 'too much thinking' about learning, implementing and testing it.
+        What if there was a nice way to develop accessible Vue applications? Would you be willing to do it? What about legislation related to Accessibility? Maybe there is a lot to learn, but it can be simpler if you know where to start with."
+        speakers:
+          speaker_1: *geisy
       advanced-XState:
         item_type: "talk"
         track: *track_1

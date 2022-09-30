@@ -24,6 +24,10 @@ gold:
     logo_filename: workwave.svg
     site_url: "https://www.workwave.com/"
 silver:
+  sponsor0:
+    name: "extera"
+    logo_filename: "extera.png"
+    site_url: "ttps://www.extera.com/"
   sponsor1:
     name: "CentralReach"
     logo_filename: centralreach.svg
