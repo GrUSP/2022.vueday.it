@@ -30,15 +30,25 @@ speaker_3: &geisy
   speaker_bio: "She has been working as a Front end developer for almost 12 years, and yet she is passionated about learning new things and sharing with as many people as possible. She has been involved with the Swedish community by teaching web development to women, people of color and minorities on the past few years."
   speaker_github_url: "https://github.com/Gdomiciano"
   speaker_twitter_url: "https://twitter.com/geisydomiciano"
-#   is_mc: false
-# speaker_4: &
-#   speaker_in_speaker_lists: true
-#   speaker_name:
-#   speaker_pic_filename: .png
-#   speaker_role: "t"
-#   speaker_bio: ""
-#   speaker_twitter_url: "https://twitter.com/filrakowski"
-#   is_mc: false
+  is_mc: false
+speaker_4: &luca
+  speaker_in_speaker_lists: true
+  speaker_name: Luca Iaconelli
+  speaker_pic_filename: luca-iaconelli.png
+  speaker_role: "Mobile and web specialist @ Abilio S.p.A (Gruppo Illimity Bank)"
+  speaker_bio: "👦🏻 Since I was a child I have always been interested in every type of electronic device and in their 'mysterious way of functioning'..
+  So, over the years, these interests have grown with me:
+<ul>
+<li>- At the age of 6, Santa gave me my first computer along with a cell phone;</li>
+<li>- Since 2005, I am a Microsoft Insider (beta tester);</li>
+<li>- During the school period, I was the first to develop a game working right on different platforms and devices;</li>
+<li>- At 19, I developed my first firmware for a Symbian S60 device;</li>
+<li>- In 2016, my team won one of the first Italian-hackathon in Ravenna;</li>
+<li>- In 2018, I graduated and certified Google Mobile and Web Specialist, coming as one in the top 1000 developers (selected from over 200,000 candidates from all over the world).</li>
+</ul>"
+  speaker_github_url: "https://github.com/luxdamore"
+  speaker_twitter_url: "https://twitter.com/@luxdamore"
+  is_mc: false
 speaker_5: &maya
   speaker_in_speaker_lists: true
   speaker_name: Maya Shavin
@@ -88,7 +98,7 @@ speakers:
   speaker_1: *fotis
   speaker_2: *denny
   speaker_3: *geisy
-  # speaker_4: *filip
+  speaker_4: *luca
   speaker_5: *maya
   speaker_6: *alba
   speaker_7: *anna
@@ -176,6 +186,18 @@ days:
         What if there was a nice way to develop accessible Vue applications? Would you be willing to do it? What about legislation related to Accessibility? Maybe there is a lot to learn, but it can be simpler if you know where to start with."
         speakers:
           speaker_1: *geisy
+      MDS:
+        item_type: "talk"
+        track: *track_1
+        # start_datetime: 2022-05-19T09:30+02:00
+        # end_datetime: 2022-05-19T10:25+02:00
+        talk_title: "'I need it yesterday!' - The secret story of MDS 🌶️"
+        talk_description: "🔥 A long time ago in a galaxy far, far away ... We started building our first Nuxt-JS project.
+        This talk is a journey through the entire process that stand behind a millions-views website: design systems, sharing code, performance, best practices and problems with third party scripts and libraries..
+        And also, how could I forget my dear product-owner and its 'I need it yesterday' motivational slogan?!
+        So, how FAR have we come today?"
+        speakers:
+          speaker_1: *luca
       advanced-XState:
         item_type: "talk"
         track: *track_1
