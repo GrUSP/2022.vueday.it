@@ -8,7 +8,7 @@ menu:
   welcome: welcome
   talks_speakers: talks and speakers
   # scommentare per generare pagina
-  # schedule: schedule
+  schedule: schedule
   # menu item for workshop
   workshop: workshops
   sponsor: sponsor

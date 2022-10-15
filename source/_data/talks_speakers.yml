@@ -1,5 +1,5 @@
 # NB impostare a `true` per generare la pagina, a `false` per NON generarla
-generate_schedule_page: false
+generate_schedule_page: true
 schedule_under_construction_title: "Schedule under construction"
 schedule_under_construction_description: "We are still defining the schedule. Please be patient"
 
@@ -109,12 +109,7 @@ tracks:
   track_1: &track_1
     id: 1
     title: "Track 1"
-  track_2: &track_2
-    id: 2
-    title: "Track 2"
-  track_3: &track_3
-    id: 3
-    title: "Track 3 - fake track"
+
 
 # NB "item_type": tipi di "talk"
 #   "talk" -- un talk vero e proprio, che va anche in components/speakers e nella pagina talks_speakers
@@ -126,43 +121,54 @@ tracks:
 
 days:
   day_1:
-    date: 2020-09-16T09:00
+    date: 2022-11-18T09:00+01:00
     title: "Day 1"
     talks:
-      talk_1:
+      # service
+      checkin:
         item_type: "service"
-        start_datetime: 2020-09-16T09:00
-        end_datetime: 2020-09-16T09:30
-        talk_title: "Check-in"
-      talk_2:
+        start_datetime: 2022-11-18T08:45+01:00
+        end_datetime: 2022-11-18T09:30+01:00
+        talk_title: "Check-in and Welcome Coffee"
+      opening:
         item_type: "service"
-        start_datetime: 2022-05-19T13:00+02:00
-        end_datetime: 2022-05-19T14:30+02:00
+        start_datetime: 2022-11-18T09:30+01:00
+        end_datetime: 2022-11-18T09:45+01:00
+        talk_title: "Opening by GrUSP"
+      coffee-morning:
+        item_type: "service"
+        start_datetime: 2022-11-18T11:05+01:00
+        end_datetime: 2022-11-18T11:35+01:00
+        talk_title: "Coffee break"
+        service_icon: "coffee"
+      lunch:
+        item_type: "service"
+        start_datetime: 2022-11-18T12:55+01:00
+        end_datetime: 2022-11-18T14:10+01:00
         talk_title: "Lunch break"
         service_icon: "cutlery"
-      happy-hour:
+      lightning:
         item_type: "service"
-        start_datetime: 2022-05-19T18:25+02:00
-        end_datetime: 2022-05-19T19:30+02:00
-        talk_title: "Happy Hour"
-        service_icon: "glass"
-
+        start_datetime: 2022-11-18T14:10+01:00
+        end_datetime: 2022-11-18T14:40+01:00
+        talk_title: "Lightning talks"
+      coffee-afternoon:
+        item_type: "service"
+        start_datetime: 2022-11-18T16:00+01:00
+        end_datetime: 2022-11-18T16:30+01:00
+        talk_title: "Coffee break"
+        service_icon: "coffee"
+      closing:
+        item_type: "service"
+        start_datetime: 2022-11-18T17:50+01:00
+        end_datetime: 2022-11-18T18:00+01:00
+        talk_title: "Closing by GrUSP"
       # talk
-      large-scale-nuxt:
-        item_type: "talk"
-        track: *track_1
-        # start_datetime: 2022-05-19T09:30+02:00
-        # end_datetime: 2022-05-19T10:25+02:00
-        talk_title: "Large Scale Nuxt Architecture"
-        talk_description: "Writing scalable and easy-to-maintain software is hard. Nuxt architecture follows best practices and provides many utilities to help and protect us from common pitfalls. In this session we will explore how big nuxt codebases differ from smaller ones, discuss unique problems you should expect and how to solve them. This will enable you to improve the architecture of your application and build better and cleaner software that everyone will enjoy working with."
-        # talk_video_url:
-        speakers:
-          speaker_1: *fotis
       migrate-vue3:
         item_type: "talk"
         track: *track_1
-        # start_datetime: 2022-05-19T10:25+02:00
-        # end_datetime: 2022-05-19T11:05+02:00
+        start_datetime: 2022-11-18T09:45+01:00
+        end_datetime: 2022-11-18T10:25+01:00
         talk_title: "Is it time to migrate to Vue 3?"
         talk_description: "Are you eager to migrate your entire codebase to Vue 3 and composition API? Before starting the long journey away from Vue 2.6 you should consider a few intermediate steps:
         <ul>
@@ -178,53 +184,19 @@ days:
       a11y-vue:
         item_type: "talk"
         track: *track_1
-        # start_datetime: 2022-05-19T09:30+02:00
-        # end_datetime: 2022-05-19T10:25+02:00
+        start_datetime: 2022-11-18T10:25+01:00
+        end_datetime: 2022-11-18T11:05+01:00
         talk_title: "A11Y with Vue - Can everyone reach your application?"
         talk_description: "Most of the time while developing a Vue application developers tend to downprioritise  both Testing and Accessibility.
         In the past few years developers got a bit better when it comes to testing, but still adding no focus towards Accessibility, usually because there is 'too much thinking' about learning, implementing and testing it.
         What if there was a nice way to develop accessible Vue applications? Would you be willing to do it? What about legislation related to Accessibility? Maybe there is a lot to learn, but it can be simpler if you know where to start with."
         speakers:
           speaker_1: *geisy
-      MDS:
-        item_type: "talk"
-        track: *track_1
-        # start_datetime: 2022-05-19T09:30+02:00
-        # end_datetime: 2022-05-19T10:25+02:00
-        talk_title: "'I need it yesterday!' - The secret story of MDS 🌶️"
-        talk_description: "🔥 A long time ago in a galaxy far, far away ... We started building our first Nuxt-JS project.
-        This talk is a journey through the entire process that stand behind a millions-views website: design systems, sharing code, performance, best practices and problems with third party scripts and libraries..
-        And also, how could I forget my dear product-owner and its 'I need it yesterday' motivational slogan?!
-        So, how FAR have we come today?"
-        speakers:
-          speaker_1: *luca
-      advanced-XState:
-        item_type: "talk"
-        track: *track_1
-        # start_datetime: 2022-05-19T09:30+02:00
-        # end_datetime: 2022-05-19T10:25+02:00
-        talk_title: "Visualize your State Management with XState"
-        talk_description: "Learn a new concept to start your developing process - advanced XState for complex State Management in Vue.js applications, and start building complex architecture!"
-        # talk_video_url:
-        speakers:
-          speaker_1: *maya
-      image-performance-jamstack:
-        item_type: "talk"
-        track: *track_1
-        # start_datetime: 2022-05-19T10:25+02:00
-        # end_datetime: 2022-05-19T11:05+02:00
-        talk_title: "Images blast off at the speed of Jamstack!"
-        talk_description: "All of us, at some point in our career as developers, have had a run-in with image performance. But now we have modern techniques at our disposal that will make us love images again.
-        We'll see how an Image Service CDN and other performance optimization techniques, such as responsive images, sizing attributes, lazy loading, and nice placeholders, will allow us to improve the UX and performance in a very easy way.
-        How? By creating an image gallery made with Nuxt 3 and a headless CMS, allowing us to experience the functionalities of a powerful integrated Image Transformation API and Editor, and creating an image Vue component that can be used in any situation."
-        # talk_video_url:
-        speakers:
-          speaker_1: *alba
       reusable-components:
         item_type: "talk"
         track: *track_1
-        # start_datetime: 2022-05-19T09:30+02:00
-        # end_datetime: 2022-05-19T10:25+02:00
+        start_datetime: 2022-11-18T11:35+01:00
+        end_datetime: 2022-11-18T12:15+01:00
         talk_title: "Reusable components: maintain clean code efficiently"
         talk_description: "Reusable components perform a great job helping to speed up the development process, increase maintainability and improve code quality.
         Creating a reusable component that will solve these problems can be tricky. What is the right balance between specific and generic? When the component is abstract and composable enough? How to ensure consistency and follow design guidelines?
@@ -235,8 +207,8 @@ days:
       web3:
         item_type: "talk"
         track: *track_1
-        # start_datetime: 2022-05-19T10:25+02:00
-        # end_datetime: 2022-05-19T11:05+02:00
+        start_datetime: 2022-11-18T12:15+01:00
+        end_datetime: 2022-11-18T12:55+01:00
         talk_title: "The !magic show: Taking a Vue at Web 3."
         talk_description: "Let’s be amazed at how easy we can implement some Web 3 functionality with Vue 3. Don’t think Crypto token chilling, NFT’s,… but think of authentication magic.
         In this show, I will create a dApp in which the user can authenticate to a certain blockchain. Surprisingly, this can be completely anonymous. Some magic props and tools will be used like Vue 3, a Metamask wallet, and more.
@@ -244,5 +216,50 @@ days:
         # talk_video_url:
         speakers:
           speaker_1: *sybren
+      MDS:
+        item_type: "talk"
+        track: *track_1
+        start_datetime: 2022-11-18T14:40+01:00
+        end_datetime: 2022-11-18T15:20+01:00
+        talk_title: "'I need it yesterday!' - The secret story of MDS 🌶️"
+        talk_description: "🔥 A long time ago in a galaxy far, far away ... We started building our first Nuxt-JS project.
+        This talk is a journey through the entire process that stand behind a millions-views website: design systems, sharing code, performance, best practices and problems with third party scripts and libraries..
+        And also, how could I forget my dear product-owner and its 'I need it yesterday' motivational slogan?!
+        So, how FAR have we come today?"
+        speakers:
+          speaker_1: *luca
+      image-performance-jamstack:
+        item_type: "talk"
+        track: *track_1
+        start_datetime: 2022-11-18T15:20+01:00
+        end_datetime: 2022-11-18T16:00+01:00
+        talk_title: "Images blast off at the speed of Jamstack!"
+        talk_description: "All of us, at some point in our career as developers, have had a run-in with image performance. But now we have modern techniques at our disposal that will make us love images again.
+        We'll see how an Image Service CDN and other performance optimization techniques, such as responsive images, sizing attributes, lazy loading, and nice placeholders, will allow us to improve the UX and performance in a very easy way.
+        How? By creating an image gallery made with Nuxt 3 and a headless CMS, allowing us to experience the functionalities of a powerful integrated Image Transformation API and Editor, and creating an image Vue component that can be used in any situation."
+        # talk_video_url:
+        speakers:
+          speaker_1: *alba
+      large-scale-nuxt:
+        item_type: "talk"
+        track: *track_1
+        start_datetime: 2022-11-18T16:30+01:00
+        end_datetime: 2022-11-18T17:10+01:00
+        talk_title: "Large Scale Nuxt Architecture"
+        talk_description: "Writing scalable and easy-to-maintain software is hard. Nuxt architecture follows best practices and provides many utilities to help and protect us from common pitfalls. In this session we will explore how big nuxt codebases differ from smaller ones, discuss unique problems you should expect and how to solve them. This will enable you to improve the architecture of your application and build better and cleaner software that everyone will enjoy working with."
+        # talk_video_url:
+        speakers:
+          speaker_1: *fotis
+      advanced-XState:
+        item_type: "talk"
+        track: *track_1
+        start_datetime: 2022-11-18T17:10+01:00
+        end_datetime: 2022-11-18T17:50+01:00
+        talk_title: "Visualize your State Management with XState"
+        talk_description: "Learn a new concept to start your developing process - advanced XState for complex State Management in Vue.js applications, and start building complex architecture!"
+        # talk_video_url:
+        speakers:
+          speaker_1: *maya
+
 
 
