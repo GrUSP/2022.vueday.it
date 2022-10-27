@@ -163,24 +163,18 @@ days:
         start_datetime: 2022-11-18T17:50+01:00
         end_datetime: 2022-11-18T18:00+01:00
         talk_title: "Closing by GrUSP"
+
       # talk
-      migrate-vue3:
+      advanced-XState:
         item_type: "talk"
         track: *track_1
         start_datetime: 2022-11-18T09:45+01:00
         end_datetime: 2022-11-18T10:25+01:00
-        talk_title: "Is it time to migrate to Vue 3?"
-        talk_description: "Are you eager to migrate your entire codebase to Vue 3 and composition API? Before starting the long journey away from Vue 2.6 you should consider a few intermediate steps:
-        <ul>
-        <li>- compatibility with your dependencies</li>
-        <li>- tests</li>
-        <li>- maintainability</li>
-        <li>- consider a step-by-step migration passing trough Vue 2.7</li>
-        <li>- what about the Vite/Vitest ecosystem?</li>
-        </ul>"
+        talk_title: "Visualize your State Management with XState"
+        talk_description: "Learn a new concept to start your developing process - advanced XState for complex State Management in Vue.js applications, and start building complex architecture!"
         # talk_video_url:
         speakers:
-          speaker_1: *denny
+          speaker_1: *maya
       a11y-vue:
         item_type: "talk"
         track: *track_1
@@ -250,16 +244,22 @@ days:
         # talk_video_url:
         speakers:
           speaker_1: *fotis
-      advanced-XState:
+      migrate-vue3:
         item_type: "talk"
         track: *track_1
         start_datetime: 2022-11-18T17:10+01:00
         end_datetime: 2022-11-18T17:50+01:00
-        talk_title: "Visualize your State Management with XState"
-        talk_description: "Learn a new concept to start your developing process - advanced XState for complex State Management in Vue.js applications, and start building complex architecture!"
+        talk_title: "Is it time to migrate to Vue 3?"
+        talk_description: "Are you eager to migrate your entire codebase to Vue 3 and composition API? Before starting the long journey away from Vue 2.6 you should consider a few intermediate steps:
+        <ul>
+        <li>- compatibility with your dependencies</li>
+        <li>- tests</li>
+        <li>- maintainability</li>
+        <li>- consider a step-by-step migration passing trough Vue 2.7</li>
+        <li>- what about the Vite/Vitest ecosystem?</li>
+        </ul>"
         # talk_video_url:
         speakers:
-          speaker_1: *maya
-
+          speaker_1: *denny
 
 
