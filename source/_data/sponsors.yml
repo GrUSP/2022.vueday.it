@@ -28,15 +28,19 @@ gold:
     logo_filename: workwave.svg
     site_url: "https://www.workwave.com/"
 silver:
-  sponsor0:
+  sponsor1:
     name: "extera"
     logo_filename: "extera.png"
     site_url: "https://www.extera.com/"
-  sponsor1:
+  sponsor2:
+    name: "GitLab"
+    logo_filename: "gitlab.svg"
+    site_url: "https://about.gitlab.com/"
+  sponsor3:
     name: "CentralReach"
     logo_filename: centralreach.svg
     site_url: "https://centralreach.com/"
-  sponsor2:
+  sponsor4:
     name: "Daruma"
     logo_filename: daruma.svg
     site_url: "http://www.darumahq.com/"
