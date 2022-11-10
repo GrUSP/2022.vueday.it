@@ -45,6 +45,10 @@ silver:
     logo_filename: "gitlab.svg"
     site_url: "https://about.gitlab.com/"
 bronze:
+  sponsor1:
+    name: "abilio"
+    logo_filename: abilio.svg
+    site_url: "https://www.abilio.com"
   sponsor2:
     name: "stickermule"
     logo_filename: stickermule.svg
